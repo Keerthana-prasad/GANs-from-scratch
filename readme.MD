@@ -12,15 +12,12 @@ The Discriminator code uses Conv2D layers with LeakyReLU and Dropout to downsamp
 
 During training, the loop:
 
-Generates fake images from noise.
+1. Generates fake images from noise.
 
-Trains the discriminator on real + fake images using binary cross-entropy loss.
+2. Trains the discriminator on real + fake images using binary cross-entropy loss.
 
-Trains the generator using the discriminator’s feedback so it learns to fool it.
+3. Trains the generator using the discriminator’s feedback so it learns to fool it.
 
-Repeats this process iteratively until the generated images look realistic.
+4. Repeats this process iteratively until the generated images look realistic.
 
-Writing code? Meet Codex.
-Pair with Codex in your terminal or IDE, free for a limited time in your ChatGPT plan.
-Install Codex
 
